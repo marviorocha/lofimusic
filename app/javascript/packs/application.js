@@ -6,7 +6,7 @@
 import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-import "../stylesheets/tailwindcss"
+import "stylesheets/application"
 
 Rails.start()
 ActiveStorage.start()

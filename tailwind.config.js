@@ -1,9 +1,22 @@
 module.exports = {
-  purge: [
-    './app/**/*/*.html.erb',
-    './app/helpers/**/*/*.rb',
-    './app/javascript/**/*/*.js'
-  ],
+  mode: 'jit',
+  purge:
+  {
+    content: [
+      './app/**/*.html.erb',
+      './app/**/*.html',
+      './public/packs/*.js',
+      './src/**/*.{js,jsx,ts,tsx,vue}',
+      './app/helpers/**/*.rb',
+      './app/javascript/**/*.js',
+      './app/javascript/**/*.scss',
+    ],
+    options: {
+      safelist: [
+        /data-theme$/,
+      ]
+    },
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -12,8 +25,8 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
     require('daisyui')
+
   ],
 }
