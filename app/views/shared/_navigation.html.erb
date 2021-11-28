@@ -1,0 +1,13 @@
+<nav class="md:ml-auto md:mr-auto flex flex-wrap justify-items-end text-base justify-end">
+  <% if(user_signed_in?) %>
+    <div>
+      <%= current_user.role === 'user' ? 'You are logged as on user' : 'You are logged as on administrator' %>
+    </div>
+    <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'mr-5 btn btn-primary' %>
+  <% else %>
+    <a class="mr-5 hover:text-gray-900">First Link</a>
+    <a class="mr-5 hover:text-gray-900">Second Link</a>
+    <a class="mr-5 hover:text-gray-900">Third Link</a>
+    <a href='<%= new_user_session_path %>' class="mr-5 font-bold hover:text-gray-900">Login</a>
+  <% end %>
+</nav>

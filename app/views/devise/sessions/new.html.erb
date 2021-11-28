@@ -2,9 +2,9 @@
   <h2 class="text-xl text-gray-600 font-bold uppercase">Log in</h2>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field py-2">
-      <%= f.label :email %><br />
+      <%= f.label :username %><br />
       <%= f.text_field :username, autofocus: true, autocomplete: "email", 
-      placeholder: 'Username or e-mail',  class:'rounded'  %>
+      placeholder: 'Username',  class:'rounded'  %>
     </div>
     <div class="field py-2">
       <%= f.label :password %><br />
