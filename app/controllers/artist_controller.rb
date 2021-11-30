@@ -1,3 +1,5 @@
 class ArtistController < ApplicationController
-  def index; end
+  def index
+  @title = "List All Artist || LofiMusic"
+  end
 end

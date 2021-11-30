@@ -6,7 +6,7 @@ module Api
       render json: response, status: :ok
     end
 
-    def show; 
+    def show
       response = api_artist(params[:id])
       render json: response, status: :ok
     end
