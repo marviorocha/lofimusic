@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.feature '#Albums /albums ', type: :feature do
   let(:user) { create(:user, username: 'the_user', password: '12345678', role: 'user') }
-
   let(:admin) { create(:user, username: 'the_admin', password: '12345678', role: 'admin') }
   let(:album) { create(:album) }
 
