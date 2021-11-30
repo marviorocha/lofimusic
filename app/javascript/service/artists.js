@@ -11,7 +11,7 @@ const store = writable([], () => {
 const artist_list = async () => {
 
 
-    let response = await fetch(`http://localhost:3000/api/artist_list`)
+    let response = await fetch(`api/artist_list`)
         .catch(error => { console.error(error); });
 
     const artist = await response.json();

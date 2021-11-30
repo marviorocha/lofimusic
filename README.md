@@ -15,15 +15,15 @@
 
 - User default 
 
-*username:* user <br />
-*password:* 12345678 <br />
-website: [lofimusic.herokuapp.com]("https://lofimusic.herokuapp.com")
+**username:** user <br />
+**password:** 12345678 <br />
+website: [lofimusic-demo.herokuapp.com]("https://lofimusic-demo.herokuapp.com")
 
 - Admin default
 
-*username:* admin <br />
-*password:* 12345678 </br>
-website: [lofimusic.herokuapp.com]("https://lofimusic.herokuapp.com")
+**username:** admin <br />
+**password:** 12345678 </br>
+website: [lofimusic-demo.herokuapp.com]("https://lofimusic-demo.herokuapp.com")
 
 ## The commits informations
 
@@ -31,7 +31,7 @@ All commits was separed the master for easy to check my code, please seen the co
 [branch developer](https://github.com/marviorocha/lofimusic/commits/developer)
 <b>LofiMusic</b> is a app test to checking <b>skills code</b> developed by <b>Marvio Rocha</b> using <b>Ruby On Rails 6+</b> and <b>TailwindCSS</b> with an classic TDD method.
 
-<p></p>
+
 ## Some gems and tools included in project
 
 | Version | Technology |
