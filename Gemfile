@@ -45,3 +45,7 @@ gem 'webmock', '~> 3.14'
 gem 'faker', '~> 2.19'
 
 gem 'rest-client', '~> 2.1'
+
+gem "heroicon", "~> 0.4.0"
+
+gem "figaro", "~> 1.2"
