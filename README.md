@@ -8,8 +8,14 @@
 <p align="center">
   <img src="app/assets/images/Logo.png" width="250" title="Logo LofiMusic">
 </p>
+
+## The commits informations
+
+All commits was separed the master for easy to check my code, please seen the commits the 
+[branch developer](https://github.com/marviorocha/lofimusic/commits/developer)
 <b>LofiMusic</b> is a app test to checking <b>skills code</b> developed by <b>Marvio Rocha</b> using <b>Ruby On Rails 6+</b> and <b>TailwindCSS</b> with an classic TDD method.
 
+<p></p>
 
 | Version | Technology |
 |---------|------------|
@@ -18,13 +24,9 @@
 |         | TailwindCSS|
 |         | DaisyUI    |
 |         | Svelte     |
-|         |            |
+
 
  
-## The commits informations
-
-All commits was separed the master for easy to check my code, please seen the commits the 
-[branch developer](https://github.com/marviorocha/lofimusic/commits/developer)
 
 
 ## Some gems and tools included in project
@@ -47,10 +49,10 @@ All commits was separed the master for easy to check my code, please seen the co
 
 [build-passed]: https://img.shields.io/github/workflow/status/marviorocha/lofimusic/ruby-test-notepad/developer?style=for-the-badge
 [build-url]: https://github.com/marviorocha/notepad/actions/workflows/ruby.yml
-[coverage-shield]: https://img.shields.io/codeclimate/coverage/marviorocha/notepad?style=for-the-badge
-[coverage-url]: https://codeclimate.com/github/marviorocha/notepad/test_coverage
-[maintainability-shield]: https://img.shields.io/codeclimate/maintainability/marviorocha/notepad?style=for-the-badge
-[maintainability-url]: https://codeclimate.com/github/marviorocha/notepad/maintainability
+[coverage-shield]: https://img.shields.io/codeclimate/coverage/marviorocha/lofimusic?style=for-the-badge
+[coverage-url]: https://codeclimate.com/github/marviorocha/lofimusic/test_coverage
+[maintainability-shield]: https://img.shields.io/codeclimate/maintainability/marviorocha/lofimusic?style=for-the-badge
+[maintainability-url]: https://codeclimate.com/github/marviorocha/lofimusic/maintainability
 [logo-url]: /assets/images/logo.svg
 
 
