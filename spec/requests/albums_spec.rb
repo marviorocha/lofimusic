@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe '#Albums', type: :request do
   describe 'GET /index' do
-    let(:user) { user = build :user }
+    let(:user) { create(:user, username: 'the_user', password: '12345678', role: 'user') }
     let(:login) do
       post user_session_path, params: {
         user: {

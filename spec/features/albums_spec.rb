@@ -21,9 +21,9 @@ RSpec.feature '#Albums /albums ', type: :feature do
         fill_in 'Username', with: user.username
         fill_in 'Password', with: user.password
         click_button 'Log in'
+        album
         visit albums_path
-        expect(page).to have_text('You are logged as on use')
-        expect(page).to have_text('Edit')
+
         expect(page).to have_text('New Album')
         expect(page).to have_link(href: '/albums/new')
       end
@@ -35,11 +35,10 @@ RSpec.feature '#Albums /albums ', type: :feature do
         fill_in 'Username', with: admin.username
         fill_in 'Password', with: admin.password
         click_button 'Log in'
+        album
         visit albums_path
 
-        expect(page).to have_text('You are logged as on admin')
         expect(page).to have_text('Remove')
-        expect(page).to have_text('New Album')
       end
     end
   end

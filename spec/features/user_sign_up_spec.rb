@@ -6,7 +6,6 @@ RSpec.feature '#User signs in', type: :feature do
 
     scenario 'Register user with role of user' do
       visit new_user_registration_path
-      fill_in 'Full name', with: user.full_name
       fill_in 'Username', with: user.username
       fill_in 'Email', with: user.email
       fill_in 'Password', with: '12345678'
@@ -21,7 +20,6 @@ RSpec.feature '#User signs in', type: :feature do
     scenario 'Register user with role of administrator' do
       visit new_user_registration_path
 
-      fill_in 'Full name', with: user.fullname
       fill_in 'Username', with: user.username
       fill_in 'Email', with: user.email
       fill_in 'Password', with: '12345678'
