@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 2021_11_28_133916) do
   enable_extension "plpgsql"
 
   create_table "albums", force: :cascade do |t|
-    t.string "name"
-    t.date "year"
-    t.string "artist"
+    t.string "name", null: false
+    t.integer "year", null: false
+    t.string "artist", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
