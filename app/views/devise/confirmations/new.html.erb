@@ -1,0 +1,20 @@
+<section class="flex my-28 items-center flex-col justify-center">
+  <h2 class='text-xl font-bold uppercase text-gray-600'>Resend confirmation instructions</h2>
+  <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), 
+      html: { method: :post }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+    <div class="field py-2">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, 
+          autofocus: true, 
+          class: 'rounded',
+          autocomplete: "email",
+          value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Resend confirmation instructions", 
+          class: 'btn-primary w-full py-2 cursor-pointer rounded' %>
+    </div>
+  <% end %>
+  <%= render "devise/shared/links" %>
+</section>

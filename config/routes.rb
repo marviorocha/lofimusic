@@ -1,3 +1,14 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  devise_for :users
+  root to: 'artist#index'
+  resources :albums
+
+  concern :api_default do
+    resources :artist_list
+  end
+
+  # versionament of api
+  namespace :api, constraints: { format: 'json' } do
+    concerns :api_default
+  end
 end

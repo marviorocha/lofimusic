@@ -1,0 +1,15 @@
+<nav class="md:ml-auto flex flex-wrap space-x-4  my-4 text-base justify-end">
+  <% if(user_signed_in?) %>
+    <div>
+      <%= is_user_logged(current_user) %>
+    </div>
+    <div>
+      <%= link_to 'Artists', root_path, class: 'link mr-5 font-bold hover:text-gray-900' %>
+      <%= link_to 'Albums', albums_path, class: 'link mr-5 font-bold hover:text-gray-900' %>
+    </div>
+    <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'btn btn-sm btn-primary' %>
+  <% else %>
+    <a href='<%= new_user_registration_path %>' class="btn btn-sm btn-info">Sign up</a>
+    <a href='<%= new_user_session_path %>' class="btn btn-sm btn-primary">Login</a>
+  <% end %>
+</nav>

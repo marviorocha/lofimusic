@@ -1,0 +1,37 @@
+ 
+<% if album.errors.any? %>
+  <div class="alert my-8 animate__animated animate__fade animate__delay-2s alert-error">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 mx-2 stroke-current">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path>
+    </svg>
+   <%= pluralize(album.errors.count, "error") %> <br />
+    <%= alert %>
+    <hr>
+    <% album.errors.each do |error| %>
+      <li><%= error.full_message %></li>
+    <% end %>
+  <% end %>
+</div>
+
+  <%= form_with(model: album) do |form| %>
+    <div class="p-10 flex mx-auto w-4/6  card bg-base-200">
+      <div class="form-control">
+        <%= form.label :name, class:'label' %>
+        <%= form.text_field :name, placeholder: 'Album name', class: 'input input-bordered'%>
+      </div>
+      <div class="form-control">
+        <%= form.label :artist, class:'label' %>
+        <%= form.select :artist, @json.collect{|artist| artist[0]['name']},
+         class: 'select select-bordered w-full max-w-xs'%>
+      </div>
+      <div class="form-control">
+        <%= form.label :year, class: 'label' %>
+        <%=  form.select :year, year_range, class: 'input input-bordered'%>
+      </div>
+      <div class="form-control py-5">
+        <%= button_tag(type: 'submit',  data: { disable_with: "Saving..." }, class: "btn btn-primary ") do %>
+          <%= heroicon 'save' %> Save Album
+        <% end %>
+      </div>
+    </div>
+  <% end %>

@@ -6,6 +6,8 @@
 import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-
+import 'animate.css';
+import "service/notify"
+import "stylesheets/application"
 Rails.start()
 ActiveStorage.start()

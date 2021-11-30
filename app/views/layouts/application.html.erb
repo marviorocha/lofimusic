@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
   <head>
-    <title>Lofimusic</title>
+    <title><%= content_for(:title) ? content_for(:title) : "LofiMusic" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_pack_tag 'application' %>
+    <%= javascript_pack_tag 'app_svelte' %>
+    <%= stylesheet_pack_tag 'application' %>
   </head>
-
   <body>
-    <%= yield %>
+    <%= render 'shared/header' %>
+    <main class='container m-auto max-w-5xl'>
+      <div class="mx-auto m-5">
+        <%= render 'shared/mensagers' %>
+      </div>
+      <%= yield %>
+    </main>
+    <%= render 'shared/footer' %>
   </body>
 </html>
