@@ -9,6 +9,22 @@
   <img src="app/assets/images/Logo.png" width="250" title="Logo LofiMusic">
 </p>
 
+## How to access this application:
+
+
+
+- User default 
+
+*username:* user <br />
+*password:* 12345678 <br />
+website: [lofimusic.herokuapp.com]("https://lofimusic.herokuapp.com")
+
+- Admin default
+
+*username:* admin <br />
+*password:* 12345678 </br>
+website: [lofimusic.herokuapp.com]("https://lofimusic.herokuapp.com")
+
 ## The commits informations
 
 All commits was separed the master for easy to check my code, please seen the commits the 
@@ -16,6 +32,7 @@ All commits was separed the master for easy to check my code, please seen the co
 <b>LofiMusic</b> is a app test to checking <b>skills code</b> developed by <b>Marvio Rocha</b> using <b>Ruby On Rails 6+</b> and <b>TailwindCSS</b> with an classic TDD method.
 
 <p></p>
+## Some gems and tools included in project
 
 | Version | Technology |
 |---------|------------|
@@ -29,7 +46,6 @@ All commits was separed the master for easy to check my code, please seen the co
  
 
 
-## Some gems and tools included in project
 
 - [Rspec Rails](https://github.com/rspec/rspec-rails)
 - [Factory Bot Rails](https://github.com/thoughtbot/factory_bot_rails)
@@ -47,8 +63,8 @@ All commits was separed the master for easy to check my code, please seen the co
 
 <!-- MARKDOWN IMAGE AND LINK -->
 
-[build-passed]: https://img.shields.io/github/workflow/status/marviorocha/lofimusic/ruby-test-notepad/developer?style=for-the-badge
-[build-url]: https://github.com/marviorocha/notepad/actions/workflows/ruby.yml
+[build-passed]: https://img.shields.io/github/workflow/status/marviorocha/lofimusic/ruby-test-lofimusic/developer?style=for-the-badge
+[build-url]: https://github.com/marviorocha/lofimusic/actions/workflows/ruby.yml
 [coverage-shield]: https://img.shields.io/codeclimate/coverage/marviorocha/lofimusic?style=for-the-badge
 [coverage-url]: https://codeclimate.com/github/marviorocha/lofimusic/test_coverage
 [maintainability-shield]: https://img.shields.io/codeclimate/maintainability/marviorocha/lofimusic?style=for-the-badge
